@@ -1,0 +1,632 @@
+aws 
+godadd
+bigrok
+goggle cloud
+
+
+
+
+#1
+what is next.js
+..the react frameworks for the web apps 
+..it is based on react js library
+..but many extra features were added in the next js over react js
+..like routing ,middleware ect
+..next js is used for make single page appliction
+
+why next js
+..make big projects easily and quickly
+..inbuild features like
+..ssr (server side rendering)
+..many features are added by next js over react js
+(i)routing
+(ii)css support
+(iii)middleware etc
+..built in optimizations features
+
+what we will learn in this series 
+(i)next js setup
+(ii)basics with react js
+(iii)form handling
+(iv)validation
+(v)data handling
+(vi)routing
+(vii)ssr
+(viii)middleware
+(ix)api fetching 
+(x)interview questions 
+(xi)stylish
+(xii)optimization
+(xiii)exercise
+ect
+
+
+
+
+
+
+#3 
+First program in next.js
+(i)..write fresh code in page.js
+(ii)make component
+(iii)reuse component
+(iv)data passing in component
+
+(v)interview questions 
+
+..is react code working with nextjs
+yes
+..what is component
+component is piece of code reuseable code 
+
+..how to pass data in component 
+ two types component basically class based and functional based(as props data pass kr skte hi)
+
+..difference between javascript and typescript
+(i)javascript automically type conversion kr leti hi 
+(ii) typescript andr btana padta hi kis type data use kroge typescript browser samaj nhi pata pehle typescript code  hamara javascript convert hoga  phir browser run hoga
+
+..server side scripting vs client side scripting
+
+
+
+
+#4 Events , functions and state
+(i) events in next js
+(ii) make function and call
+(iii)call component as function 
+(iv)make state and update
+(v)interview questions
+
+
+..what is use client in the next js
+
+..how to call the function
+
+..make a component  inside  a component 
+
+..call components as  a fucntion 
+
+..what is a state in react
+
+
+
+#5
+file and folder structure 
+..important files for beginners
+..other file introduction 
+..code flow of next js
+..interview questions
+
+..what is package.json?
+ye hamari peoduct ki deatiles rakhta hi 
+commands rakhta hi
+..difference between dependency and devdependency
+dependency use development mode and production mode dono mode hoti hi
+(ii) devdependency only use development only use hoti hi
+
+
+jsconfig.json -> javascript config file(javascript language configration hoti hi)
+next.config.js -> next js config file(frame work configration hoti hi)
+
+
+
+
+
+#6
+components types in nextjs
+(i)type of components in next js
+2 two of components server and client
+   
+(ii) what is server components
+ ....server component
+
+ (a)render on the server side 
+ (b)by default all components are server components
+ (c) they are closer to the backend
+ (d) so be-related logic and code should write in server components
+
+(iii)what is client component
+  client component
+
+  (a)render on the client side  
+  (b)can make client components with
+  (c)`use client`  directive
+  (d)all ul-related code and events should be written here
+
+
+(iv) where to use server components
+
+(v)where to use client components
+
+(vi)interview questions
+
+(i)components type based on rendering
+ 2 types server and client
+(ii)client component vs server component 
+
+(iii) can use both type of component together
+yes 
+
+
+
+
+what do u need to do 
+...........
+.............server components............
+fetch data -> +
+access backend resources(directly) -> +
+keep sensitive information on the server (access tokens , api keys, ect)  ---> +
+keep large dependencies on the server / reduce client- side javascript ------> +
+
+
+
+..........client component............
+add interactivity and event listeners (onclick(), onchange(), etc)-------> +
+use state and lifecycle effects (usestate(), useReducer(), useEffect() , etc) ---> +
+use browser-only apis (set time out)--> +
+use custom hooks that depends on state , effects or browser-only apis ---> +
+use react class components ---> +
+
+
+
+
+
+
+
+
+
+
+
+
+
+#7
+basic routing make new page
+..make a folder for the new page
+..make page file and write component code 
+.. route example
+
+
+(i)..interview questions
+..what is the pattern for creating page in nextjs 
+src/login/page.js
+
+..do we need to install any package for routing in next js 
+nhi krni padti ishki khudki route hoti hi
+
+..next js uses a file-system based router 
+
+
+
+
+basic routing | make new page
+(a)localhost:3000/login
+(b)src/login/page.js
+
+(a)localhost:3000/about
+(b)src/aboubt/ page.js
+
+..the folder name will match with the route name 
+..page.js should be present in every folder
+
+
+
+
+
+#8
+
+Linking and Navigation 
+
+..what is linking and Navigation
+
+linking -> <a helps link banayege or uske uper ek screen se dushre screen move kroge to use bolte hi (linking)
+Navigation -> jab hum ek button bana dete hi or us button ke click ke ek screen dushre uper jate hi to use bolte hi Navigation
+
+..how to make links 
+..how to navigate to another screen
+..interview questions
+
+.. task for u
+
+(i)two ways of navigating between routes 
+2 types linking and navigation 
+.(ii).difference between link and Navigation
+link use <a tag href kam krte hi
+navugation -> button event laga skte hi (koi hum event ke uper routing krte use hum navigation kehte hi)
+
+
+#9
+.................
+Nested Routing 
+...............................
+..what is nested routing 
+
+..make nested  routing 
+
+..make navigation between nested pages 
+
+..interview questions 
+.waht is nested routing 
+..pattern for nested routing
+
+
+
+example 
+........
+normal routing 
+..........
+.Home
+.about
+.login
+.profile
+.setting
+.........
+nested routing
+.................
+.Home
+.About 
+-> about student 
+-> teacher college
+.login
+-> student login
+-> teacher login
+
+
+nested routing
+............
+;; localhost:3000/about/aboutcollege
+;; src/about/aboutcollege/page.js
+
+
+
+
+
+
+#10
+common layout 
+ans->jb ap koi websites yah web app banate ho na to waha kuch common area hote hi header wo bhot sare screen uper same rahega
+example -> header,footer ,sidebar
+...............
+..make layouts js
+..create a navigation bar for login 
+..add a common style for login 
+..interview questions 
+.task for u
+
+
+..how common layout works in nextjs
+..why user first letter capital in link
+
+
+
+
+#11
+
+conditional layouts in next js
+...............................
+what is conditionl layout
+.get route name by the  hook
+..apply condition with route name 
+..interview questions 
+..the task for u
+
+
+..how to write conditions in jsx 
+..how to add conditional layout?
+
+
+
+
+
+#12
+
+dynamic routes 
+...........
+
+..what are dynamic routes
+..make a folder and file for the dynamic route
+..write code and navigation
+..get dynamic route name
+..interview questions 
+..the task for u
+
+
+
+..what is  a dynamic route?.
+..how to get dynamic route name..
+
+
+
+
+
+
+
+#13
+
+catch-all segments of route(kisi chiz chote chote parts ko segments bolte hi)
+
+..what are the segments of the route 
+..how to get all segments of route
+..interview questions 
+..the task for u
+
+
+..get route name from url
+...ans ->jo params hum use krte hi uske andr se params object nikalo phirmil jayegi
+..how to get all segments of route
+jo folder use krte ho uske age ... dot lagake access kr skte ho
+
+
+
+# 14
+
+404 page in nextjs
+..what is 404 page 
+..make the global 404 page
+ globally use kr skte ye sab apply hoti hi
+
+..make route specific 404 page 
+kisi page alag aalg page not found show krbana hi to use thiss
+
+..interview questions
+..task for u 
+
+
+..,make 400 page a segment
+ans -> ... laga ke segment not-found bana skte hi
+
+..how to make 404 page
+..ans -> 
+..what is 404 page
+-> error show krbane ke lie 
+
+
+#15
+
+..middleware in nextjs...
+(i)what is middleware in next js routing
+eyse self executing code hota hi jo routing request call hone se pehle execute hota hi
+example(authentication , redirection)
+
+<!-- export  function middleware(){
+  console.log("middleware aabc");
+} -->
+
+(ii)make middleware in next js app
+(iii)add config matcher
+specific route config matcher use krke redirect krba skte hi
+(iv) interview question
+(v)task for u
+
+..important
+(vi)waht us middleware in next js
+(vii)where we can use middleware
+(viii)how to apply middleware in spefic route
+
+
+...The * (asterisk) is a wildcard that matches zero or more segments of the path. For 
+example, it will match /about, /about/1, /about/1/details, and so on.
+
+../about/:path+:
+The + (plus) is also a wildcard, but it matches one or more segments of the path. It requires at least one segment after /about/.
+For example, it will match /about/1 and /about/1/details, but not /about because there is no segment after /about/.
+
+
+
+#16
+
+............rendering in next js...........
+(a)what is rendering ?
+ans-> 
+
+(b)rendering environments
+
+(i)client-side environment 
+(ii)server-side enviroment
+
+(c)component-level client and server rendering 
+
+(d) what is pre-rending(code browser anne se pehle he rendering ho chuka hi)
+
+  .generate html in advance on the server side
+
+  (i)static generation
+  (ii)server side rendering
+
+(e) static generation
+..static generation :- with static rendering both server and client components can be prerendered on the server at build time
+.............
+static generation 
+
+the html is generated at build-time and is reused for each request
+............
+
+(f)server-side rendering(dynamic time pe generate hoti jab hum request krte hi us time html code generate hota hi server side ke uper)
+
+.server-side rendering is the pre-rendering method that generates the html on each request
+
+/........server-side rendering......./
+the html is generated each request 
+
+
+
+
+
+
+
+#17
+.client side vs PreRendering 
+(a)how to know rendering types 
+(b)check result of rendering 
+(c)why this is important
+(d)seo with rendering
+(e)how is seo works
+
+
+
+
+
+
+#18
+
+fetch data in client component
+.create product components 
+..make it client component
+..add hooks
+..call api
+..render data
+
+..what is client component in next js
+..how to make client component
+...fetch data in client component
+
+
+
+
+
+#19
+
+fetch data in server component 
+..create server components for products 
+..make a function for call api
+..call api
+
+..render data
+
+
+..what is the server component in next js 
+..how do call api in server components 
+
+#20
+
+
+client components with server component
+
+(a)why do we need a client component inside server component
+(b)make component
+(c)pass data in components
+(d)add events
+
+.how to perform events with server component 
+server component ke sath events perform nhi ho skti use krne ke lie client component use krne padega
+
+..pass data between component 
+
+
+
+#21
+
+css with next js 
+..global css
+..inline css 
+..update style with  a butoon 
+..interview questions
+
+..can write style tag in next js 
+..update style with use State
+
+
+
+#22
+
+css modules with nextjs(modules scc use to give the different color on the tag its very using full for the coding)
+......
+..how this is different from normal css 
+..make a modular css file
+..apply css module
+..multiple css module
+.interview questions 
+
+..what is css module
+..how module css is different from normal css
+..how to use module css
+
+
+#23
+
+condition with style
+
+..condition wit class 
+..condition with style attribute 
+..extract class from cs  module object 
+..interview questions 
+
+..how to apply css with condition 
+..extract class from css module 
+..how to apply conditions with html tags
+
+#24
+image optimization 
+..why use image component of nextjs 
+..import and use image 
+..use html img tag
+.config for image from other domain
+..important props in next image 
+..inertview questions 
+..how to optimize image in next js
+..differnent between next js image and html img
+..how to use public folder image
+.config for external image url
+
+
+
+
+
+
+
+
+
+#25 
+font optimization
+..why use next js font
+..how to use a normal font
+..how to use nextjs font
+..interview questions
+
+
+
+
+
+#26(metadata website  seo ke andr help krta hi)
+
+generateMetadata for Dynamic meta
+(her ek page ke alag alag title description)
+
+.waht is dynamic meta data
+..what is the use of generateMetadata?
+..how to use generateMetadata?
+..wrong way to use meta data
+..use generateMetadata with multiple route
+..interview Questions
+
+..how to use dynamic title tag in next.js
+
+
+
+
+#27
+script Component in Next js 
+(next js mein jis component apko code chsheye wohi use karega)
+..what is script component in next js 
+..how to use
+..example for script ta
+..interview questions
+
+
+#28
+
+Loader in next js
+..why do we need  a loader in next js 
+..call api
+..render data of api on screen 
+..make loading screen 
+..check loader
+..interview questions 
+
+
+.how to make a loader in next js 
+.how to add loading  screen  in next js 
+
+
+
+
