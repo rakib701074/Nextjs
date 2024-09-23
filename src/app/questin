@@ -628,5 +628,124 @@ Loader in next js
 .how to add loading  screen  in next js 
 
 
+#29
+
+static assets in the next js
+..what are static assets 
+..how to use them in the next js code 
+..use of images 
+..use of css 
+.use of js 
+..interview questions 
+
+#30
+how make production build 
+..what is build 
+.type of build
+
+ans -> two typs of build (i)production and (ii)development
+difference between production and development 
+
+..what is production build 
+..how to make production build 
+..run production build 
 
 
+#31
+export static html page with build
+
+..what is static html means
+..make some pages
+..add configuration 
+..run build command 
+..check html and try to run it
+
+#32
+static site generation (ssg)
+.what is ssg 
+..make a service file and call api 
+..display data from api
+..make dynamic routing 
+.make build with ssg
+
+..what is ssg 
+..how tp call api
+. how to make ssg build
+..use of generateStaticParams
+
+
+#33
+redirect in next js 
+..what is redirect
+..redirect from component
+..redirect from config file
+..dynamic url redirect
+
+..how many ways we have to redirect
+2 ways to redirect 
+..how to redirect  dynamic redurection with config file
+
+
+#34
+
+envirnment variables 
+..what are enviroment variables 
+.how to access envirment variables 
+..use enviroment varibales 
+
+.interview questions 
+
+..how to use different configurations in different build 
+
+..what are enviroment variables 
+
+#35
+api routes in next js
+.use of api routes 
+..make api route
+..test it with postman
+..interview questions
+
+..make to make api route with next js 
+..use of api route in next js
+
+
+#36
+Get API with static data
+..api for user detail and user list
+.make a static db file
+..make user list api
+..make a route for single-user api
+..get request params 
+..filter result and test api
+..interview questions
+
+
+.how to make api with next js api routes 
+..api for single result 
+..get params from url in next js api route
+..filter result from array
+
+
+#37 
+call nextjs apis
+..make routes for screen
+.call user list api
+.display data
+.call user detail api
+.display user data
+.test api
+
+
+#37
+
+write post api
+
+.make post api function 
+.write api response 
+.get request params
+.apply validation checks
+.test post with postman
+
+..make post api route
+..get the request body in the post api request

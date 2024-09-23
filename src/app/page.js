@@ -1,19 +1,71 @@
-import { Roboto } from "next/font/google"
-const roboto = Roboto({
-  weight: '100',
-  subsets:['latin'],
-  display:'swap'
-})
+
 export default function Home(){
+// console.log(process.env.NODE_ENV)
+if (typeof process.env.SERVER_PASWORD !== 'undefined'){
+  console.log(process.env.SERVER_PASWORD);
+}else{
+  console.log("undefined server password");
+}
+
   return(
     <main>
-      <h1>Font optimization in Next</h1>
-      {/* <h2 style={{fontFamily:'Robot',fontWeight:100}}>Font optimization in Next</h2>  */}
-
-      <h1 className={roboto.className}>Font with Next Js font feature</h1>
+  
+      {
+       process.env.NODE_ENV=="development"?
+       <h1>U are on development mode</h1>
+       : 
+       <h1>u are on production mode</h1>
+      }
+      <h1>Enviroment variables in next js</h1>
     </main>
   )
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// export default function Home(){
+//   return(
+//     <main>
+//       <h1>static assets in next js</h1>
+//     </main>
+//   )
+// }
+
+
+
+
+
+
+
+// import { Roboto } from "next/font/google"
+// const roboto = Roboto({
+//   weight: '100',
+//   subsets:['latin'],
+//   display:'swap'
+// })
+// export default function Home(){
+//   return(
+//     <main>
+//       <h1>Font optimization in Next</h1>
+//       {/* <h2 style={{fontFamily:'Robot',fontWeight:100}}>Font optimization in Next</h2>  */}
+
+//       <h1 className={roboto.className}>Font with Next Js font feature</h1>
+//     </main>
+//   )
+// }
 
 
 

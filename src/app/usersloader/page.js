@@ -12,14 +12,15 @@ export default async function UsersLoader(){
     return(
         <main>
             <h1>User Name List</h1>
-            
             {
+
             users.map((item)=>(
-                <div>
-                    <h2>User Name: {item.firstName}</h2>
+                <div key={item.id}>
+                  <h2 >User Name: {item.firstName}</h2>
                 </div>
             ))
 
+            
         }
 
         </main>

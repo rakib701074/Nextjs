@@ -55,7 +55,7 @@ export default function Page() {
         <div>
             <h1>Product List</h1>
             {product.map((item) => (
-                <div>
+                <div key={item.id}>
                 <h3 key={item.id}>{item.title}</h3>
                 {/* <button onClick={()=>alert("hello")}>Check Price</button> */}
                 <Product price={item.price} />

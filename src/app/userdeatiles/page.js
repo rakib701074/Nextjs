@@ -8,7 +8,7 @@ export default function Page() {
             <Script  src="/locations.js" onLoad={()=>{
                 console.log("file loaded");
             }} />
-            <h1>Get user getlocation</h1>
+            <h1>Get user get location</h1>
         </main>
     )
 }

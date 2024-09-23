@@ -1,7 +1,9 @@
 'use client';
+// import {redirect} from 'next/navigation'
 
 import {useState} from "react";
 export default function User(){
+    //  redirect("/")
     const [h3Style, setH3Style] = useState({backgroundColor: 'green'})
     return(
         <div>
